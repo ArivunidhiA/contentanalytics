@@ -1,13 +1,20 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from 'react-helmet-async';
+import Dashboard from '@/components/Dashboard';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Helmet>
+        <title>Content Analytics Dashboard | Real-Time Performance Metrics</title>
+        <meta 
+          name="description" 
+          content="Track real-time article engagement, reader behavior, and content performance metrics with our comprehensive analytics dashboard." 
+        />
+        <meta name="keywords" content="content analytics, article performance, engagement metrics, audience insights, real-time analytics" />
+        <link rel="canonical" href="/" />
+      </Helmet>
+      <Dashboard />
+    </>
   );
 };
 
